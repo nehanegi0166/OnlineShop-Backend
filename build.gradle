@@ -39,15 +39,4 @@ tasks.named('test') {
 	finalizedBy jacocoTestReport
 }
 
-jacoco {
-	toolVersion = "0.8.7" // Specify the JaCoCo version you want to use
-}
 
-tasks.named('jacocoTestReport') {
-	dependsOn test // tests are required to run before generating the report
-	reports {
-		xml.required.set(true)
-		csv.required.set(false)
-		html.outputLocation.set(layout.buildDirectory.dir("jacocoHtml"))
-	}
-}

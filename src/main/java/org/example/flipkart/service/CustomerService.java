@@ -1,7 +1,6 @@
 package org.example.flipkart.service;
 
 import lombok.RequiredArgsConstructor;
-import org.example.flipkart.dto.CategoryResponseDTO;
 import org.example.flipkart.dto.ProductResponseDTO;
 import org.example.flipkart.entity.Category;
 import org.example.flipkart.entity.Product;
